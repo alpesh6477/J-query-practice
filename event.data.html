@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: fit-content;
+            padding: 3%;
+            width: fit-content;
+            text-align: justify;
+            background: lightcoral;
+            border: 1px solid black;
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>jquery event.data  method</h2>
+    <div id="box">
+     <p>djbdccdhsbcjhds hd cdbcckhd hdbccjhbcukdncjhccjhdbchdcchdsbcjd</p>
+     <p>snbuhsbxjsd xhgsvxj hds xgdjhdvhgvxx v yubujvuye  hjebhgvxuyb </p>
+     <p>buxvuyn ubiuebebniue hhbdebuicbduycv hjbcjhbucyb hbcuygcyueg y</p>
+
+    </div>
+
+
+
+
+
+    <!--  event.data na use this value je pass kari hoi te readd kari shakay
+    -->
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").each(function(i){
+$(this).on("click",{value:i},function(event){
+    alert(event.data.value);
+});
+
+            });
+
+
+        });
+
+    </script>
+</body>
+
+</html>

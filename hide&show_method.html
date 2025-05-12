@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+    }
+
+    #box {
+        width: 70%;
+        height: 200px;
+        background: lightgreen;
+        overflow: auto;
+        padding: 10px;
+        border: 1px solid #000;
+
+    }
+
+    #test {
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <h1>
+        jquery hide and show() method
+
+    </h1>
+    <div id="box" class="test">
+        <h3>test box</h3>
+        <p>stance riding. The djbdnckdsbkdsndkjbsdkjcsdjcbdncbdkjbsdhcbddjbdjcbdsjgvdhyucsd average price for this tyre
+            in
+            India
+            is around ₹1,500 to ₹2,000, but it can vary slightly depending on the dealer and location.</p>
+
+    </div>
+    <button id="hide"> hide</button>
+    
+    <button id="show"> show</button>
+    
+    <button id="toggle"> toggle</button>
+
+
+
+
+    <!--  jquery in hide and show  method-->
+
+
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#hide").click(function(){
+    $(".test").hide(1000);
+});
+$("#show").click(function(){
+    $(".test").show(1000 );   
+});
+$("#toggle").click(function(){
+    $(".test").toggle(1000 );   
+});
+
+
+});
+         
+
+
+    
+    </script>
+</body>
+
+
+</html>

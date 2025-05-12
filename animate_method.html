@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+    }
+
+    #box {
+        justify-content: center;
+       width: auto;
+       width: fit-content;
+        background: rgb(5, 11, 179);
+        overflow: auto;
+        padding: 10px;
+        border: 1px solid #000;
+        position: relative;
+
+    }
+
+    #test {
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <h1>
+        jquery animate method
+
+    </h1>
+    <div id="box" class="test">
+        <h3>test box</h3>
+        <p>stance riding. The derage price for this tyre
+          and location.</p>
+
+    </div>
+    <button id="animate"> animate</button>
+   
+    
+
+
+
+
+    <!--  jquery in animate  method
+     
+   $(selector).animate({params},speed,callback);
+                           !
+                    almost css property
+                           !
+                      camel case
+    
+    -->
+
+
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+
+ /*      $(document).ready(function(){
+        $("#animate").click(function(){
+            $("#box").animate({
+textAlin : "center",
+borderWidth :' 5px',
+fontSize : '20px',
+left : '100px'
+
+});
+        });
+      });
+
+      */
+
+      $(document).ready(function(){
+        $("#animate").click(function(){
+            $("#box").animate({left : '150px'});
+            
+            $("#box").animate({top : '200px'});
+            $("#box").animate({left : '200px'});
+        $("#box").animate({top: '500px'});
+        });
+      });
+         
+
+
+    
+    </script>
+</body>
+
+
+</html>

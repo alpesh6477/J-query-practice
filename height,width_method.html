@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+    }
+
+    #box {
+        width: 50%;
+        height: 200px;
+        background: rgb(2, 84, 2);
+        overflow: auto;
+        padding: 20px 20px;
+        border: 10px solid #000;
+        
+        
+
+    }
+</style>
+
+<body>
+    <h1>
+        jquery height and width method
+
+    </h1>
+    <div id="box">
+        <h3>test box</h3>
+        <p>stance riding. The djbdnckdsbkdsndkjbsdkjcsdjcbdncbdkjbsdhcbddjbdjcbdsjgvdhyucsd average price for this tyre
+            in
+            India
+            is around ₹1,500 to ₹2,000, but it can vary slightly depending on the dealer and location.</p>
+
+    </div>
+    <button id="width"> width</button>
+
+    <button id="height"> Height</button>
+
+
+
+    <!--  jquery in height and width  method-->
+
+    <!--   width( paragraph ni)
+      height()
+      innerWidth( border in ander ni)
+      innerHeight()
+      outerWidth(border sathe ni width)
+      outerHeight()
+      outerWidth(true) bey baju nu margin sathe ni width 
+      outerHight(true)
+
+-->
+
+
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("#width").click(function () {
+ console.log(" width: " + $("#box").width());
+ console.log(" innerWidth: " + $("#box").innerWidth());
+ console.log(" outerWidth: " + $("#box").outerWidth());
+ console.log(" outerWidth(true): " + $("#box").outerWidth(true));
+
+            });
+
+            $("#height").click(function(){
+                console.log(" height: " + $("#box").height());
+ console.log(" innerHeight: " + $("#box").innerHeight());
+ console.log(" outerHeight: " + $("#box").outerHeight());
+ console.log(" outerHeight(true): " + $("#box").outerHeight(true));
+            });
+        });
+    </script>
+</body>
+
+
+</html>

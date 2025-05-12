@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+    }
+    #test{
+        background-color: bisque;
+    }
+    .red{
+        color: green;
+        
+        }
+</style>
+
+<body>
+    <h1>
+        wrapAll (ek div ma jaja tag leva mate) & wraplnner method
+
+    </h1>
+    <div id="box">
+        <h3>test box</h3>
+        
+        <p>stance riding. The djbdnckdsbkdsndkjbsdkjcsdjcbdncbdkjbsdhcbddjbdjcbdsjgvdhyucsd average price for this tyre
+            in
+            India
+            is around ₹1,500 to ₹2,000, but it can vary slightly depending on the dealer and location.</p>
+            <p>stance riding. The djbdnckdsbkdsndkjbsdkjcsdjcbdncbdkjbsdhcbddjbdjcbdsjgvdhyucsd average price for this tyre
+                in
+                India
+                is around ₹1,500 to ₹2,000, but it can vary slightly depending on the dealer and location.</p>
+                <p>stance riding. The djbdnckdsbkdsndkjbsdkjcsdjcbdncbdkjbsdhcbddjbdjcbdsjgvdhyucsd average price for this tyre
+                    in
+                    India
+                    is around ₹1,500 to ₹2,000, but it can vary slightly depending on the dealer and location.</p>
+
+    </div>
+    <br>
+
+    <button id="wrapAll"> wrapAll</button>
+
+    <button id="wrapInner"> wraplnner</button>
+
+
+
+    <!--  wrapAll & wraplnner method-->
+
+
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#wrapAll").click(function () {
+                $("#box p").wrapAll("<div id='test'> </div>");
+            });
+            $("#wrapInner").click(function () {
+                $("h1").wrapInner('<span class="red"> </span>');
+            });
+
+
+        });
+    </script>
+</body>
+
+
+</html>

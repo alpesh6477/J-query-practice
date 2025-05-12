@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+       
+    }
+
+    #first {
+        justify-content: center;
+        width: auto;
+        max-width: fit-content;
+      
+        overflow: auto;
+        padding: 20px;
+        border: 1px solid #000;
+      
+
+    }
+    #second {
+        justify-content: center;
+        width: auto;
+        max-width: fit-content;
+        background:lightgreen;
+        overflow: auto;
+        padding: 20px;
+        border: 1px solid #000;
+      
+
+    }
+
+
+</style>
+
+<body>
+    <h1>
+        jquery has and is method
+
+    </h1>
+    <div id="first">
+        <p>kjnfkjbnfdkjnfnckdbcck <b>hello world </b>fjbccfhncksdhbcwdsndsncsdhncjds</p>
+        <p>jcndsjbdkj cbsdghvcusdbcjdvchdb jdvcudncbghdvbcuidsbvyu</p>
+    </div>
+    <ul> 
+        <li>hdbch</li>
+    <li>jcndsjks</li>
+    <li>jcnsdundsbn</li>
+    <li>dsjnckjds</li>
+    </ul>
+    
+        <p class="test">kjdnckbjndjcbicbrjccbdhcbdgccbihcberjbcjehcvyebc</p>
+        <p>jcbsdbndh cudhccjgvcdbcufgciydbnc <span class="test">elie has best series </span>uygiuebcuygcidhyvc</p>
+   
+   
+    <!--  jquery in has and is   method  
+    koi div ma tage hoi tene target karvamate
+ 
+
+    -->
+
+
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+       
+
+           $(document).ready(function(){
+       //  $("p").has("b ,span").css("background", "yellow")
+           $("p").click(function(){
+            if ($(this).parent().is("div")) {
+                $(this).css("background","red");
+            }
+           });
+          });
+
+    </script>
+</body>
+
+</html>

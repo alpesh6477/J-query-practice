@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+    }
+
+    #box {
+        width: 70%;
+        height: 200px;
+        background: PINK;
+        overflow: auto;
+        padding: 10px;
+        border: 1px solid #000;
+
+    }
+    #box1 {
+        width: 70%;
+        height: 200px;
+        background: yellow;
+        overflow: auto;
+        padding: 10px;
+        border: 1px solid #000;
+
+    }
+</style>
+
+<body>
+    <h1>
+        jquery clone method
+
+    </h1>
+    <div id="box">
+        <h2>text box</h2>
+        <p>stance riding. The average price for this tyre in
+            India
+            is around ₹1,500 to ₹2,000, but it can vary slightly depending on the dealer and location.</p>
+    </div>
+    <div id="box1">
+        
+        <p>stance ridiit can vary slightly depending on the dealer and location.</p>
+    </div>
+    <button id="clone"> clone</button>
+
+<!-- clone methods  ,  multiple event add kari shkay
+-->
+
+
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script >
+
+$(document).ready(function(){
+   
+          $("#clone").click(function(){
+            $("#box h2").clone().prependTo("#box1");
+            $("#box p").clone().appendTo("#box1");
+          });
+            
+        });
+    </script>
+</body>
+
+
+</html>

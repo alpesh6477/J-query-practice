@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #result {
+            width: fit-content;
+            padding: 3%;
+            width: fit-content;
+            text-align: justify;
+            background: lightcoral;
+            border: 1px solid black;
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>jquery event.stop propagation method</h2>
+    <div id="result">
+        <h2>test box</h2>
+        <br>
+        <p>jnsdjbdjnhgdbvsdjbdjkjdbdnjbidfinyfdbcidsncudshcuidcuifbfbjhdbudcdsbcjdbcjhdcbjjhdb</p>
+        <button> test button </button>
+
+    </div>
+
+
+
+
+
+    <!--  aa method no use ek j div ma be click event aapi hoi tyare use thay
+      
+    ek click par te be div and h2 ni banne ni alerrt show kare ena mate use karay
+    -->
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#result").click(function () {
+                alert("the div element was clicked");
+            });
+            $("h2").click(function (event) {
+                alert("the h2 element is clicked ");
+                event.stopPropagation();
+            });
+
+            $("p").click(function () {
+                alert("the p element is clicked ");
+            });
+
+
+        });
+
+    </script>
+</body>
+
+</html>

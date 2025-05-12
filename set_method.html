@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+    }
+
+    #box {
+        width: 70%;
+        height: 200px;
+        background: PINK;
+        overflow: auto;
+        padding: 10px;
+        border: 1px solid #000;
+
+    }
+</style>
+
+<body>
+    <h1>
+        jquery set events
+
+    </h1>
+    <div id="box">
+        <h2>text box</h2>
+        <p>The MRF Zapper 90/90-18 tyre is a solid choice for your Honda CB Shine 125, especially considering your
+            preference for long and fast rides. The Zapper series is known for its good grip and stability, which are
+            crucial for high-speed and long-distance riding. The average price for this tyre in India is around ₹1,500
+            to
+           ecially considering
+            your
+            preference for long and fast rides. The Zapper series is known for its good grip and stability, which are
+            crucial for high-speed and long-distance riding. The average price for this tyre in India is around ₹1,500
+            to
+            ₹2,000, but it can vary slightly depending on the dealer and location.The MRF Zapper 90/90-18 tyre is a
+            solid
+            stability, which are crucial for high-speed and long-distance riding. The average price for this tyre in
+            India
+            is around ₹1,500 to ₹2,000, but it can vary slightly depending on the dealer and location.</p>
+    </div>
+    <button id="clickbutton"> set value</button>
+
+<!-- set methods  ,  changes karva mate
+ 
+
+
+text
+class
+p
+h3
+
+-->
+ 
+
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script >
+
+        $(document).ready(function(){
+            $('#clickbutton').click(function(){
+                $('#box h2').text("hello");
+            });
+            $('#clickbutton').click(function(){
+                $('#box p').text("hello yahoo baba");
+            });
+        });
+    </script>
+</body>
+
+
+</html>

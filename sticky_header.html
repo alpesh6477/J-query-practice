@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .head {
+            width: 100%;
+            position: fixed;
+            background-color: aquamarine;
+        }
+        .container {
+            display: flex;
+            margin: auto;
+            width: 100%;
+            max-width: 1000px;
+            padding: 20px 50px;
+            justify-content: center;
+        }
+        .home {
+            display: flex;
+        }
+        .home li {
+            list-style: none;
+            margin: 10px 20px;
+            font-size: larger;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="container">
+            <ul class="home">
+                <li>Home</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </header>
+    
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/headhesive.min.js"></script>
+    <script>
+        // Options for Headhesive.js
+        var options = {
+            offset: 500
+        }
+
+        // Initialize Headhesive.js with the correct class
+        var header = new Headhesive('.head', options);
+    </script>
+</body>
+</html>

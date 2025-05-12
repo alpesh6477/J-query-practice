@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+       #result
+       {
+          width: fit-content;
+          padding: 10%;
+           background: lightcoral;
+           border: 1px solid black;
+           top: 10px;
+       }
+
+      
+   </style>
+</head>
+<body>
+   <h2>jquery event.prevent default method</h2> 
+   <div id="result">
+    <h2>test box</h2>
+<br>
+<a href="www.ggogle.com" id="box">hello google</a>
+<br>
+<br>
+<a href="www.google.com">hello chrome</a>
+
+   </div>
+   <br>
+   <h2></h2>
+   
+  
+
+
+   <!-- link uper click karo to link no work kare-->  
+   
+   <script src="/js/jquery-3.7.1.min.js"></script>
+   <script>
+     $(document).ready(function(){
+        $("#box").click(function(event){
+            event.preventDefault();
+
+            var a = event.isDefaultPrevented();
+        $("h2").html(a);
+        });
+        
+     });    
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+    }
+
+    #box {
+        width: 40%;
+        height: 200px;
+        background: lightgreen;
+        overflow: auto;
+        padding: 80px;
+        border: 1px solid #000;
+
+    }
+
+    
+</style>
+
+<body>
+    <h1>
+       jquery position (je ander no content hoi te left , right, top ,bottm thi ketlo  se te perent ni) and offset (te ander na peragraph sudhi lay lee) method
+
+    </h1>
+    <div id="box">
+        <h3>test box</h3>
+        <p>stance riding. The djbdnckdsbkdsndkjbsdkjcsdjcbdncbdkjbsdhcbddjbdjcbdsjgvdhyucsd average price for this tyre
+            in
+            India
+            is around ₹1,500 to ₹2,000, but it can vary slightly depending on the dealer and location.</p>
+
+    </div>
+    <button id="position"> position</button>
+
+    <button id="offset"> offset</button>
+
+
+
+    <!--  jquery in Wrap() and Unwrap() method-->
+
+
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+          $("#position").click(function(){
+var x = $("#box h3").position();
+
+console.log("top : " + x.top + " left : " +x.left);
+          });
+          $("#offset").click(function(){
+var y =  $("#box h3").offset();
+
+console.log( "top : "+ y.top + " left : "+ y.left);
+          });
+
+
+        });
+    </script>
+</body>
+
+
+</html>

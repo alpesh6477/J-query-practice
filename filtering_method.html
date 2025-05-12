@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+       
+    }
+
+    #first {
+        justify-content: center;
+        width: auto;
+        max-width: fit-content;
+        background:lightcoral;
+        overflow: auto;
+        padding: 20px;
+        border: 1px solid #000;
+      
+
+    }
+    #second {
+        justify-content: center;
+        width: auto;
+        max-width: fit-content;
+        background:lightgreen;
+        overflow: auto;
+        padding: 20px;
+        border: 1px solid #000;
+      
+
+    }
+
+
+</style>
+
+<body>
+    <h1>
+        jquery DOM traversing method
+
+    </h1>
+    <div id="first">
+        <p>kjnfkjbnfdkjnfnckdbcckfjbccfhncksdhbcwdsndsncsdhncjds</p>
+        <p>jcndsjbdkj cbsdghvcusdbcjdvchdb jdvcudncbghdvbcuidsbvyu</p>
+    </div>
+    <ul> 
+        <li>hdbch</li>
+    <li>jcndsjks</li>
+    <li>jcnsdundsbn</li>
+    <li>dsjnckjds</li>
+    </ul>
+    <div id="second">
+        <p class="test">kjdnckbjndjcbicbrjccbdhcbdgccbihcberjbcjehcvyebc</p>
+        <p>jcbsdbndh cudhccjgvcdbcufgciydbncuygiuebcuygcidhyvc</p>
+    </div>
+   
+    <!--  jquery in Dom travering   method  
+    
+  
+  -filtering method 
+         -first() akkha page ma first p ne lage css
+         -last()  akha page ma last p ne lage css
+         -eq()   e quation ne lay 0,1,2,3
+         -filter()  class aapo ema e p ne lay
+         not()  je class aapyo hase eni sivay na badha ne lage
+         slice()  
+
+    -->
+
+
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+       
+
+           $(document).ready(function(){
+        
+   //   $("p").first().css("background", "red");
+  //  $("p").last().css("background", "red");
+ //  $("p").eq(2).css("background", "red");
+ // $("p").filter(".test").css("background", "red");
+ //   $("p").not(".test").css("background", "red");
+ $("ul li").slice(1).css("background", "red");
+          });
+
+    </script>
+</body>
+
+</html>

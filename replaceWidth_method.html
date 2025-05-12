@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+    }
+
+    #box {
+        width: 70%;
+        height: 200px;
+        background: PINK;
+        overflow: auto;
+        padding: 10px;
+        border: 1px solid #000;
+
+    }
+</style>
+
+<body>
+    <h1>
+        jquery replace all and replace with
+
+    </h1>
+    <div id="box">
+     
+        <p>stance riding. The <span>hello yahoo baba</span> average price for this tyre in
+            India
+            is around ₹1,500 to ₹2,000, but it can vary slightly depending on the dealer and location.</p>
+            <p>stance riding. The average price for this tyre in
+                India
+                is around ₹1,500 to ₹2,000, but it can vary slightly depending on the dealer and location.</p>
+                <p>stance riding. The average price for this tyre in
+                    India
+                    is around ₹1,500 to ₹2,000, but it can vary slightly depending on the dealer and location.</p>
+    </div>
+    <button id="replace"> replace</button>
+    
+  
+
+<!-- replaceWith()  methods( ek tag change kari shakay ) ,,replaceAll()  methods( badha tag change kari shakay )  and prependTo () ,  multiple event add kari shkay
+-->
+
+
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script >
+
+$(document).ready(function(){
+    
+          $("#replace").click(function(){
+          //  $('#box p:first-child').replaceWith("<h3> yahoo baba </h3>"); 
+
+          $("<h3>yahoo baba </h3>").replaceAll("#box p");
+          });
+            
+        });
+    </script>
+</body>
+
+
+</html>

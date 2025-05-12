@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial;
+       
+    }
+
+    #box {
+        justify-content: center;
+        width: auto;
+        max-width: fit-content;
+        background:lightblue;
+        overflow: auto;
+        padding: 20px;
+        border: 1px solid #000;
+      
+
+    }
+
+    #outer {
+        overflow: auto;
+        background: lightcoral;
+        border: 1px solid #000;
+        padding: 20px;
+    }
+    #inner{
+        background: lightgreen;
+        border: 1px solid #000;
+        display: flex;
+        gap: 10px;
+        padding: 20px;
+        
+
+    }
+    #inner h2{
+        margin-top: -10px;
+        height: fit-content;
+    }
+    #inner div{
+        width: 130px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: yellowgreen;
+        border: 1px solid black;
+        margin-top: 30px;
+        
+
+    }
+
+</style>
+
+<body>
+    <h1>
+        jquery DOM traversing method
+
+    </h1>
+    <div id="box" >
+        <h3>main outer</h3>
+      <ul>  <div id="outer">
+           <h2>outer</h2> 
+            <div id="inner">
+                <h2 id="child-head">inner</h2>
+                <div>A</div>
+                <div>B</div>
+                <div id="child-C">C</div>
+                <div>D</div>
+                <div class="test">E</div>
+            </div>
+
+
+        </div>
+    </ul>
+
+
+    </div>
+   
+    <!--  jquery in Dom travering   method  
+    
+  -ancestors method  (jena use this child tag thi paerent , grand parent tag sudhi jay sakay)
+      -parent()  eno je parents hase ene target are
+      -parents()  ena jetla parents hoi ene baddha ne
+      -parentsUntil()  te child this je parents sudhi javu hoi te limint set kasri sakhhay
+      -closest()   najik nna game te tag ne target kare e 
+      -offsetParent()
+
+  -descendants method  (jena use this child , parents child , grand child  tag sudhi pogi shakay)
+       -children()
+       -find()
+ -siblings method ( parents same  hoi child bhai ne target kare  )
+       -siblings(   same parents ma bija child ne target karva)
+       -next( je child select karyo hoi eni pasi no)
+       -nextAll( je child select karyo hoi eni pela no)
+       -nextUntil( 2 child ni vache na ne target kare )
+       -prev()
+       -prevAll()
+       -prevUntil()
+  -filtering method 
+         -first()
+         -last()
+         -eq()
+         -filter()
+         not()
+         slice()
+
+    -->
+
+
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script>
+        // ancestors method
+     //   $(document).ready(function(){
+        //     $("#child-C").parent().css('background' , 'red');  
+      //   $("#child-C").parents().css('background' , 'red');
+      //   $("#child-C").parentsUntil("#box ").css('background' , 'red');
+       //      $("#child-C").closest("ul").css('background' , 'red');
+     //   });
+
+     // descendants method
+      //     $(document).ready(function(){
+       //     $("#inner").children("#child-C").css("background", "yellow");
+            
+     //       $("#inner").find("div").css("background", "yellow");
+    //      });
+
+           $(document).ready(function(){
+        //    $("#child-C").siblings( ).css("background", "pink");
+           
+        //   $("#child-C").nextUntil(".test" ).css("background", "pink");
+            
+        //    $("#child-C").nextAll( ).css("background", "pink");
+        
+        // $("#child-C").prevUntil(".test" ).css("background", "pink");
+        
+        $("#child-C").prevAll("" ).css("background", "pink");
+          });
+
+    </script>
+</body>
+
+</html>

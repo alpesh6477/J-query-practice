@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+       #result
+       {
+           width: 500px;
+           height: 500px;
+           background: lightcoral;
+           border: 1px solid black;
+           top: 10px;
+       }
+
+      
+   </style>
+</head>
+<body>
+   <h2>jquery event which property method</h2> 
+   <div id="result"></div>
+   <br>
+   <input type="text " id="inputbox">
+   <br>
+   <h2> </h2>
+
+
+   <!-- mouse ni click show kare je tami karo e and event show kare  -->
+   
+   <script src="/js/jquery-3.7.1.min.js"></script>
+   <script>
+       $(document).ready(function(){  
+            $("#result").on("click mouseover mouseout mousedown" , function(){
+$("h2").html(event.type + ": "  + event.which);
+            });
+
+            $("#inputbox").on("keydown" , function(){
+$("h2").html(event.type + ": "  + event.which);
+            });
+       
+       });
+   </script>
+</body>
+</html>
